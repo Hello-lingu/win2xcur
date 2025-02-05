@@ -18,3 +18,11 @@ cd path_to_your_windows_cursors
 git clone 
 ./win2xcur.sh <input_dir> <output_dir>
 ```
+
+## make sure it's right
+Your must write the `index.theme`.
+```txt
+[Icon Theme]
+Name=your cursor theme name
+Comment=yout cursor theme descriptor
+```
