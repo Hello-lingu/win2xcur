@@ -26,3 +26,6 @@ Your must write the `index.theme`.
 Name=your cursor theme name
 Comment=yout cursor theme descriptor
 ```
+## install your cursor theme
+Move or copy your cursors to `~/.icons` or `/usr/share/icons`.
+See your desktop manual.
