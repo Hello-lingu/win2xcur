@@ -1,10 +1,3 @@
----
-favorited: true
-title: How to convert Windows cursor to Linux xcursor
-created: '2024-10-07T03:01:32.675Z'
-modified: '2025-02-05T08:00:32.334Z'
----
-
 # How to convert Windows cursor to Linux xcursor
 Warning: `This article has specificity, and I am not found x11 cursors theme standard, maybe you will find some issues`
 ## dirctory
