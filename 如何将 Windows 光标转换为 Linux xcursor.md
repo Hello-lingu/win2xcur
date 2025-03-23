@@ -1,9 +1,3 @@
----
-title: 如何将 Windows 光标转换为 Linux xcursor
-created: '2025-02-04T09:09:20.995Z'
-modified: '2025-02-05T08:06:15.900Z'
----
-
 # 如何将 Windows 光标转换为 Linux xcursor
 警告：`本文具有特定性，我未找到 x11 光标主题标准，可能会遇到一些问题`
 ## 目录
