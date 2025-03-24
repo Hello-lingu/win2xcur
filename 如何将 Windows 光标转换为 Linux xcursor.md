@@ -1,3 +1,9 @@
+---
+title: 如何将 Windows 光标转换为 Linux xcursor
+created: '2025-02-04T09:09:20.995Z'
+modified: '2025-03-24T17:11:04.411Z'
+---
+
 # 如何将 Windows 光标转换为 Linux xcursor
 警告：`本文具有特定性，我未找到 x11 光标主题标准，可能会遇到一些问题`
 ## 目录
@@ -245,21 +251,21 @@ total 2.6M
 帮助：`ln -s 目标 链接名称` 可以创建一个指向 `目标` 的符号链接 `链接名称`
 | 语言表达 | Windows 光标文件 |  xcursor 文件 | 符号链接 |
 |------|------|------|------|
-|   正常                      | Normal.ani  | default | left_ptr  |
-|   当光标在输入框上时    | Text.ani  | text  | ibeam xterm |
-|   当光标在帮助上时         | Help.ani  | help  |  |
-|   当光标在等待窗口上时  | Busy.ani  | wait  | watch |
+|   默认                      | Normal.ani  | default | left_ptr  |
+|   鼠标在输入框时    | Text.ani  | text  | ibeam xterm |
+|   鼠标在帮助组件上         | Help.ani  | help  | 5c6cd98b3f3ebcb1f9c7f1c20463040 |
+|   鼠标在一个加载中的页面  | Busy.ani  | wait  | watch |
 |                               | Precision.ani | crosshair | cross |
 |                               | Handwriting.ani | pencil  |   draft   |
-|   当光标在链接上时        | Link.ani  | pointer | half-busy pointing_hand |
-|                               | Working.ani | progress  | left_ptr_watch |
-|                               | Unavailable.ani | not-allowed | circle crossed_circle |
+|   鼠标在链接上        | Link.ani  | pointer | hand1 hand2 half-busy pointing_hand e29285e634086352946a0e7090d73106 9d800788f1b08800ae810202380a0822 |
+|                               | Working.ani | progress  | left_ptr_watch 08e8e1c95fe2fc01f976f1e063a24ccd 3ecb610c1bf2410f44200f48c40d3599 |
+|                               | Unavailable.ani | not-allowed | circle crossed_circle 03b6e0fcb3499374a867c041f52298f0 |
 |                               | Alternate.ani | up-arrow  |     |
-|                               | Horizontal.ani  | size_hor  | e-resize ew-resize h_double_arrow left_side right_side sb_h_double_arrow w-resize |
-|                               | Vertical.ani  | size_ver  |    split_v n-resize ns-resize row-resize s-resize v_double_arrow   |
-|   当光标在窗口右下角或左上角时  | Diagonal1.ani | size_fdiag  | bottom_right_corner top_left_cornersw-resize nw-resize nwse-resize se-resize |
-|   当光标在窗口左下角或右上角时  | Diagonal2.ani | size_bdiag  | bottom_left_corner top_right_cornerne-resize ne-resize nese-resize sw-resize |
-|   当你拖动窗口时        | Move.ani  | dnd-move  | closedhand dnd-none fleur grabbing move all-scroll size_all |
+|                               | Horizontal.ani  | size_hor  | e-resize ew-resize h_double_arrow left_side right_side sb_h_double_arrow w-resize split_h col-resize |
+|                               | Vertical.ani  | size_ver  |    split_v n-resize ns-resize row-resize s-resize v_double_arrow 00008160000006810000408080010102   |
+|   鼠标在右下角或左上角  | Diagonal1.ani | size_fdiag  | bottom_right_corner top_left_cornersw-resize nw-resize nwse-resize se-resize |
+|   鼠标在左下角或右上角  | Diagonal2.ani | size_bdiag  | bottom_left_corner top_right_cornerne-resize ne-resize nese-resize sw-resize |
+|   当你拖动窗口        | Move.ani  | dnd-move  | closedhand dnd-none fleur grabbing move all-scroll size_all 4498f0e0c1937ffe01fd06f973665830 9081237383d90e509aa00f00170e968 |
 
 ## 确保正确性
 ```txt

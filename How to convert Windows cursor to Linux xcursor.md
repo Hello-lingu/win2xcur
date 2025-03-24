@@ -1,3 +1,10 @@
+---
+favorited: true
+title: How to convert Windows cursor to Linux xcursor
+created: '2024-10-07T03:01:32.675Z'
+modified: '2025-03-24T17:07:27.978Z'
+---
+
 # How to convert Windows cursor to Linux xcursor
 Warning: `This article has specificity, and I am not found x11 cursors theme standard, maybe you will find some issues`
 ## dirctory
@@ -247,19 +254,19 @@ Help:`ln -s TARGET LINK_NAME` can create a symbol link `LINK_NAME` point `TAEGET
 |------|------|------|------|
 |   Normal                      | Normal.ani  | default | left_ptr  |
 |   When cursor on input-box    | Text.ani  | text  | ibeam xterm |
-|   When cursor on help         | Help.ani  | help  |  |
+|   When cursor on help         | Help.ani  | help  | 5c6cd98b3f3ebcb1f9c7f1c20463040 |
 |   When cursor on wait window  | Busy.ani  | wait  | watch |
 |                               | Precision.ani | crosshair | cross |
 |                               | Handwriting.ani | pencil  |   draft   |
-|   When cursor on links        | Link.ani  | pointer | half-busy pointing_hand |
-|                               | Working.ani | progress  | left_ptr_watch |
-|                               | Unavailable.ani | not-allowed | circle crossed_circle |
+|   When cursor on links        | Link.ani  | pointer | hand1 hand2 half-busy pointing_hand e29285e634086352946a0e7090d73106 9d800788f1b08800ae810202380a0822 |
+|                               | Working.ani | progress  | left_ptr_watch 08e8e1c95fe2fc01f976f1e063a24ccd 3ecb610c1bf2410f44200f48c40d3599 |
+|                               | Unavailable.ani | not-allowed | circle crossed_circle 03b6e0fcb3499374a867c041f52298f0 |
 |                               | Alternate.ani | up-arrow  |     |
-|                               | Horizontal.ani  | size_hor  | e-resize ew-resize h_double_arrow left_side right_side sb_h_double_arrow w-resize |
-|                               | Vertical.ani  | size_ver  |    split_v n-resize ns-resize row-resize s-resize v_double_arrow   |
+|                               | Horizontal.ani  | size_hor  | e-resize ew-resize h_double_arrow left_side right_side sb_h_double_arrow w-resize split_h col-resize |
+|                               | Vertical.ani  | size_ver  |    split_v n-resize ns-resize row-resize s-resize v_double_arrow 00008160000006810000408080010102   |
 |   When cursor on window bottom-right or top-left  | Diagonal1.ani | size_fdiag  | bottom_right_corner top_left_cornersw-resize nw-resize nwse-resize se-resize |
 |   When cursor on window bottom-left or top-right  | Diagonal2.ani | size_bdiag  | bottom_left_corner top_right_cornerne-resize ne-resize nese-resize sw-resize |
-|   When you drag window        | Move.ani  | dnd-move  | closedhand dnd-none fleur grabbing move all-scroll size_all |
+|   When you drag window        | Move.ani  | dnd-move  | closedhand dnd-none fleur grabbing move all-scroll size_all 4498f0e0c1937ffe01fd06f973665830 9081237383d90e509aa00f00170e968 |
 
 ## Make sure it's correct
 ```txt
