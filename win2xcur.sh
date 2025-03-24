@@ -4,15 +4,20 @@ symbolic_to_default="left_ptr"
 symbolic_to_text="ibeam xterm"
 symbolic_to_wait="watch"
 symbolic_to_crosshair="cross"
-symbolic_to_pointer="hand1 hand2 half-busy pointing_hand"
-symbolic_to_progress="left_ptr_watch"
-symbolic_to_not_allowed="circle crossed_circle"
+symbolic_to_pointer="hand1 hand2 half-busy pointing_hand e29285e634086352946a0e7090d73106 9d800788f1b08800ae810202380a0822"
+symbolic_to_progress="left_ptr_watch 08e8e1c95fe2fc01f976f1e063a24ccd 3ecb610c1bf2410f44200f48c40d3599"
+symbolic_to_not_allowed="circle crossed_circle 03b6e0fcb3499374a867c041f52298f0"
 symbolic_to_pencil="draft"
-symbolic_to_size_ver="split_v n-resize ns-resize row-resize s-resize v_double_arrow"
+symbolic_to_size_ver="split_v n-resize ns-resize row-resize s-resize v_double_arrow 00008160000006810000408080010102"
 symbolic_to_size_hor="e-resize ew-resize h_double_arrow left_side right_side sb_h_double_arrow w-resize split_h col-resize"
 symbolic_to_size_fdiag="bottom_right_corner top_left_cornersw-resize nw-resize nwse-resize se-resize"
 symbolic_to_size_bdiag="bottom_left_corner top_right_cornerne-resize ne-resize nese-resize sw-resize"
-symbolic_to_dnd_move="closedhand dnd-none fleur grabbing move all-scroll size_all"
+symbolic_to_dnd_move="closedhand dnd-none fleur grabbing move all-scroll size_all 4498f0e0c1937ffe01fd06f973665830 9081237383d90e509aa00f00170e968f"
+symbolic_to_help="5c6cd98b3f3ebcb1f9c7f1c204630408"
+
+# 这些指针似乎没有对应的 Windows 指针？
+# copy -> symbolic_to_copy="dnd-copy b66166c04f8c3109214a4fbd64a50fc8 6407b0e94181790501fd1e167b474872 1081e37283d90000800003c07f3ef6bf"
+# alias -> symbolic_to_alias="a2a266d0498c3104214a47bd64ab0fc8 3085a0e285430894940527032f8b26df 640fb0e74195791501fd1ed57b41487f"
 
 function convert() {
     echo "convert"
@@ -83,6 +88,7 @@ function link_cursors() {
     link "size_fdiag"      "$symbolic_to_size_fdiag"
     link "size_bdiag"      "$symbolic_to_size_bdiag"
     link "dnd-move"        "$symbolic_to_dnd_move"
+    link "help"            "$symbolic_to_help"
 
     cd ../..
 }
