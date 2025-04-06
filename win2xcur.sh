@@ -8,12 +8,13 @@ symbolic_to_pointer="hand1 hand2 half-busy pointing_hand e29285e634086352946a0e7
 symbolic_to_progress="left_ptr_watch 08e8e1c95fe2fc01f976f1e063a24ccd 3ecb610c1bf2410f44200f48c40d3599"
 symbolic_to_not_allowed="circle crossed_circle 03b6e0fcb3499374a867c041f52298f0"
 symbolic_to_pencil="draft"
-symbolic_to_size_ver="split_v n-resize ns-resize row-resize s-resize v_double_arrow 00008160000006810000408080010102 down-arrow bottom_side"
+symbolic_to_size_ver="split_v n-resize ns-resize row-resize s-resize sb_v_double_arrow 00008160000006810000408080010102 down-arrow bottom_side top_side"
 symbolic_to_size_hor="e-resize ew-resize h_double_arrow left_side right_side sb_h_double_arrow w-resize split_h col-resize left-arrow right-arrow"
 symbolic_to_size_fdiag="bottom_right_corne ul_angle lr_angle top_left_corner top_left_cornersw-resize nw-resize nwse-resize se-resize"
 symbolic_to_size_bdiag="bottom_left_corner ur_angle ll_angle top_right_corner top_right_cornerne-resize ne-resize nese-resize sw-resize"
 symbolic_to_dnd_move="closedhand dnd-none fleur grabbing move all-scroll size_all 4498f0e0c1937ffe01fd06f973665830 9081237383d90e509aa00f00170e968f grab"
-symbolic_to_help="5c6cd98b3f3ebcb1f9c7f1c204630408 whats_this question_arrow"
+symbolic_to_help="5c6cd98b3f3ebcb1f9c7f1c204630408 whats_this question_arrow left_ptr_help"
+symbolic_to_up_arrow="link"
 
 # 这些指针似乎没有对应的 Windows 指针？
 # copy -> symbolic_to_copy="dnd-copy b66166c04f8c3109214a4fbd64a50fc8 6407b0e94181790501fd1e167b474872 1081e37283d90000800003c07f3ef6bf"
@@ -89,6 +90,7 @@ function link_cursors() {
     link "size_bdiag"      "$symbolic_to_size_bdiag"
     link "dnd-move"        "$symbolic_to_dnd_move"
     link "help"            "$symbolic_to_help"
+    link "up-arrow"        "$symbolic_to_up_arrow"
 
     cd ../..
 }
