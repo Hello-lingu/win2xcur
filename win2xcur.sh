@@ -39,7 +39,7 @@ function rename() {
 
 function link() {
     local target=$1
-    local links=($2)
+    local links=("\$2")
 
     if [ -e "$target" ]; then
         for cursor in "${links[@]}"; do
